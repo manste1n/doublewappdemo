@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    >
+
+    <TextView
+        android:id="@+id/textViewMyLine"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/BlueNeed"
+        android:fontFamily="@font/source_sans_pro"
+        android:gravity="center"
+        android:text="Expenses"
+        android:textAlignment="center"
+        android:textColor="@color/ewhite"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+        android:textAlignment="center" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textViewMyLine"
+
+         />
+
+</RelativeLayout>

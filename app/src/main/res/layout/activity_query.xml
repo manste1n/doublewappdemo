@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.QueryActivity"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:id="@+id/radiogroup_query"
+            android:orientation="horizontal"
+
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <RadioButton
+                android:id="@+id/all_history_radioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="All History"
+                android:drawableTint="@color/startblue"
+                android:layout_weight="1"
+
+                android:onClick="search"/>
+            <RadioButton
+                android:id="@+id/pay_history_radioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Pay History"
+                android:drawableTint="@color/startblue"
+                android:layout_weight="1"
+                android:onClick="search"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Spinner
+            android:id="@+id/spr_query_category"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            />
+        <Spinner
+            android:id="@+id/spr_query_time"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/btn_voice1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/search"
+            android:tint="@color/startblue"
+            android:onClick="search"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_query_from"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg"
+            android:clickable="true"
+            android:fontFamily="@font/source_sans_pro"
+            android:onClick="pickDateFrom"
+            android:text="From"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_query_to"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg"
+            android:clickable="true"
+            android:fontFamily="@font/source_sans_pro"
+            android:onClick="pickDateTo"
+            android:text="To"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/expense_query_list"
+        android:layout_width="match_parent"
+        android:layout_height="353dp"
+
+         />
+
+    <Button
+        android:id="@+id/btn_query_goToPieChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_bg"
+        android:clickable="true"
+        android:fontFamily="@font/source_sans_pro"
+        android:onClick="gotToPieChart"
+        android:text="Show Graph"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</LinearLayout>

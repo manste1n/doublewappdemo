@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">2W</string>
+    <string name="title_activity_service">2W</string>
+    <string name="title_groups">Groups</string>
+    <string name="title_expnese">Expense</string>
+    <string name="title_query">Query</string>
+    <string name="title_settle">Settle</string>
+    <string name="title_invest">Invest</string>
+    <string name="title_add_Expense">Invest</string>
+    <string name="title_activity_add_expense">Add Expense</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintPass">Password</string>
+    <string name="btlogin">LOGIN</string>
+    <string name="btSignUp">Sign Up</string>
+    <string name="forget_password">Forgot your Password?</string>
+    <string name="signup">SignUp</string>
+    <string name="check_remember_me">Remember me</string>
+    <string name="title_expense">Expense</string>
+
+
+    <string-array name="sample_group_name">
+        <item> Roomate</item>
+        <item> Colleague</item>
+        <item> Friends</item>
+        <item> Family</item>
+    </string-array>
+
+
+    <string-array name="sample_stock_name">
+        <item> Google</item>
+        <item> Facebook</item>
+        <item> Twitter</item>
+        <item> Microsoft</item>
+        <item> Intel</item>
+    </string-array>
+    <string name="title_activity_signup">Sign Up</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Added by Obaid -->
+    <string name="sign_in_using_google">Sign in using Google or Facebook</string>
+    <string name="manifest_google_sign_in">Google sign in</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="facebook_status_fmt">Facebook User: %s</string>
+    <string name="facebook_title_text">Facebook Login</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="facebook_app_id">628127620993755</string>
+    <string name="fb_login_protocol_scheme">fb628127620993755</string>
+    <string name="label_facebook_login">FacebookActivity</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">2W</string>
+    <string name="nav_header_subtitle">akzhan.kaz2003@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="dash">-</string>
+    <string name="actionToggleValues">Toggle Values</string>
+    <string name="actionToggleIcons">Toggle Icons</string>
+    <string name="actionToggleFilled">Toggle Filled</string>
+    <string name="actionToggleCircles">Toggle Circles</string>
+    <string name="actionToggleCubic">Toggle Cubic</string>
+    <string name="actionToggleStepped">Toggle Stepped</string>
+    <string name="actionToggleHorizontalCubic">Toggle Horizontal Cubic</string>
+    <string name="viewGithub">View on GitHub</string>
+    <string name="actionToggleHighlight">Toggle Highlight</string>
+    <string name="actionTogglePinch">Toggle PinchZoom</string>
+    <string name="actionToggleAutoScale">Toggle Auto Scale</string>
+
+    <string name="animateX">Animate X</string>
+    <string name="animateY">Animate Y</string>
+    <string name="animateXY">Animate XY</string>
+    <string name="actionSave">Save to Gallery</string>
+
+    <string name="actionToggleYValues">Toggle Y-Values</string>
+    <string name="actionToggleXValues">Toggle X-Values</string>
+
+    <string name="actionTogglePercent">Toggle Percent</string>
+    <string name="actionToggleMinAngles">Toggle Minimum Angles</string>
+    <string name="actionToggleHole">Toggle Hole</string>
+    <string name="actionToggleCurvedSlices">Toggle Curved Slices</string>
+    <string name="actionDrawCenterText">Draw Center Text</string>
+    <string name="actionToggleHighlightCircle">Toggle Highlight Circle</string>
+    <string name="actionToggleRotation">Toggle Rotation</string>
+    <string name="actionToggleSpin">Spin Animation</string>
+    <string name="title_graph">Graph</string>
+    <string name="nav_shareTextFrnd"> <b>Hello!</b> Your friend would like to share the app 2W with you.</string>
+    <string name="signInEnterEmailHint">Enter your email</string>
+    <string name="signInEnterPasswordHint">Enter password</string>
+    <string name="loginBtnText">Login</string>
+    <string name="signUpBtnText">sign up</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <!--
+        This is the name that users will see when interacting with this channel.
+        It should describe the category of notifications that will be sent through this channel
+     -->
+    <string name="default_notification_channel_name" translatable="true">Weather</string>
+    <string name="msg_subscribe_failed">Failed to subscribe to weather topic</string>
+    <string name="fcm_message">FCM Message</string>
+
+
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BlueNeed"
+    android:orientation="vertical"
+    tools:context="com.sda5.double2app.activities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/newicon2w" />
+
+        <EditText
+            android:id="@+id/txt_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/email_white"
+            android:drawableLeft="@drawable/email_white"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/hintEmail"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/ewhite"
+            android:textColorHint="@color/ewhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFF" />
+
+        <EditText
+            android:id="@+id/txt_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/lock_white"
+            android:drawableLeft="@drawable/lock_white"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/hintPass"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/ewhite"
+            android:textColorHint="@color/ewhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFF" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#FFF"
+            android:padding="8dp"
+            android:text="@string/check_remember_me"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_login_login"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_bg"
+            android:clickable="true"
+            android:fontFamily="@font/source_sans_pro"
+            android:onClick="login"
+            android:padding="16dp"
+            android:text="@string/btlogin"
+            android:textAllCaps="false"
+            android:textColor="@color/ewhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_login_password"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_white_bg"
+            android:clickable="true"
+            android:onClick="goToSignUpPage"
+            android:padding="16dp"
+            android:text="@string/btSignUp"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resetpasssword"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:fontFamily="@font/source_sans_pro"
+            android:onClick="resetPasswordViaEmail"
+            android:padding="16dp"
+            android:text="@string/forget_password"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <com.shobhitpuri.custombuttons.GoogleSignInButton
+            android:id="@+id/googleSignInButton"
+            android:layout_width="214dp"
+            android:layout_height="46dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:fontFamily="@font/source_sans_pro"
+            android:text="@string/google_sign_up"
+            android:textStyle="bold"
+            app:isDarkTheme="false" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

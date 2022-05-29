@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/buyer_image"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/no_buyer"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/expense_detail_list_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/buyer_image"
+        android:gravity="center_vertical"
+        android:text="Name"
+        android:textSize="17dp"
+        android:padding="5dp"/>
+</LinearLayout>
